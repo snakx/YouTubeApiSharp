@@ -22,6 +22,8 @@ A complete Private YouTube API for .NET (C#, VB.NET).
 
 The YouTubeApiSharp code is licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
+## Example code
+
 **Get the download URLs**
 
 ```c#
