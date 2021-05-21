@@ -1,6 +1,6 @@
 # YouTubeApiSharp
 
-<a href="https://raw.githubusercontent.com/thisistorsten/YouTubeApiSharp/blob/main/etc/bitcoin-address.txt" target="_blank">
+<a href="https://github.com/thisistorsten/YouTubeApiSharp/blob/main/etc/bitcoin.txt" target="_blank">
 <img src="https://github.com/thisistorsten/YouTubeApiSharp/blob/main/img/bitcoin-donate-black.png" alt="Bitcoin" title="Donate Bitcon" border="0" />
 </a>
 
