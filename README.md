@@ -67,6 +67,6 @@ dl.DownloadFile(video.DownloadUrl, video.Title, true, Environment.GetFolderPath(
 
 ## Community
 
-<a href="https://t.me/YouTubeApiSharp" target="_blank">
+<a href="https://t.me/snakxorg" target="_blank">
 <img src="https://github.com/snakx/YouTubeApiSharp/blob/main/img/telegram.png" alt="Telegram" title="Telegram Chat" border="0" />
 </a>
