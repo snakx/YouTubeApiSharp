@@ -18,6 +18,12 @@ A complete Private YouTube API for .NET (C#, VB.NET).
 - Xamarin.Android
 - Xamarin.iOS
 
+## NuGet
+
+[YouTubeApiSharp at NuGet](http://nuget.org/packages/YouTubeApiSharp)
+
+    Install-Package YouTubeApiSharp
+
 ## License
 
 The YouTubeApiSharp code is licensed under the [MIT License](http://opensource.org/licenses/MIT).

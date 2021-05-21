@@ -2,11 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.0.1</Version>
+    <Authors>Torsten Klinger</Authors>
+    <Description>A complete Private YouTube API for .NET (C#, VB.NET).</Description>
+    <RepositoryUrl>https://github.com/thisistorsten/YouTubeApiSharp</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/thisistorsten/YouTubeApiSharp</PackageProjectUrl>
+    <Copyright>Copyright © Torsten Klinger</Copyright>
+    <PackageTags>youtube, youtubeapisharp, youtubesearch, youtubeextractor, youtube-api, video, audio, download, extract, standard, net, core, xamarin</PackageTags>
+    <PackageIcon>YouTube.png</PackageIcon>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
     <PackageReference Include="taglib-sharp-netstandard2.0" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\img\YouTube.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
