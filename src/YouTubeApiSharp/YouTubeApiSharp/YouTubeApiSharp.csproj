@@ -12,6 +12,7 @@
     <PackageIcon>YouTube.png</PackageIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ApplicationIcon>YouTubeApiSharp.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
