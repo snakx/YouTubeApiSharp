@@ -353,7 +353,7 @@ namespace YouTubeApiSharp
         {
             throw new ParseException("Could not parse the Youtube page for URL " + videoUrl + "\n" +
                                             "This may be due to a change of the Youtube page structure.\n" +
-                                            "Please report this bug at me@mrklintscher.de", innerException);
+                                            "Please report this bug at thisistorsten@gmail.com", innerException);
         }
 
         private static string ContentLengthtoHumanReadable(string contentLength)
