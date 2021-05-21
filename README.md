@@ -1,7 +1,7 @@
 # YouTubeApiSharp
 
-<a href="https://raw.githubusercontent.com/thisistorsten/YouTubeApiSharp/master/etc/bitcoin-address.txt" target="_blank">
-<img src="https://github.com/thisistorsten/YouTubeApiSharp/raw/master/img/bitcoin-donate-black.png" alt="Bitcoin" title="Donate Bitcon" border="0" />
+<a href="https://raw.githubusercontent.com/thisistorsten/YouTubeApiSharp/blob/main/etc/bitcoin-address.txt" target="_blank">
+<img src="https://github.com/thisistorsten/YouTubeApiSharp/blob/main/img/bitcoin-donate-black.png" alt="Bitcoin" title="Donate Bitcon" border="0" />
 </a>
 
 ## Overview
@@ -62,5 +62,5 @@ dl.DownloadFile(video.DownloadUrl, video.Title, true, Environment.GetFolderPath(
 ## Community
 
 <a href="https://t.me/YouTubeApiSharp" target="_blank">
-<img src="https://github.com/thisistorsten/YouTubeApiSharp/raw/master/img/telegram.png" alt="Bitcoin" title="Donate Bitcon" border="0" />
+<img src="https://github.com/thisistorsten/YouTubeApiShar/blob/main/mg/telegram.png" alt="Telegram" title="Telegram Chat" border="0" />
 </a>
