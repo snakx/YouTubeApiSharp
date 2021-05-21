@@ -46,6 +46,7 @@ IEnumerable<VideoInfo> videoInfos = DownloadUrlResolver.GetDownloadUrls(link);
 // Select the first .mp4 video with 360p resolution
 VideoInfo video = videoInfos
 	.First(info => info.VideoType == VideoType.Mp4 && info.Resolution == 360);
+
 // Decrypt only if needed
 if (video.RequiresDecryption)
 {
