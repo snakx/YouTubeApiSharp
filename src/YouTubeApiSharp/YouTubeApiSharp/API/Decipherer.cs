@@ -45,17 +45,20 @@ namespace YouTubeApiSharp
 
                 if (Regex.Match(js, reReverse).Success)
                 {
-                    idReverse = functionIdentifier; //If def matched the regex for reverse then the current function is a defined as the reverse
+                    if (String.IsNullOrEmpty(idReverse))
+                        idReverse = functionIdentifier; //If def matched the regex for reverse then the current function is a defined as the reverse
                 }
 
                 if (Regex.Match(js, reSlice).Success)
                 {
-                    idSlice = functionIdentifier; //If def matched the regex for slice then the current function is defined as the slice.
+                    if (String.IsNullOrEmpty(idSlice))
+                        idSlice = functionIdentifier; //If def matched the regex for slice then the current function is defined as the slice.
                 }
 
                 if (Regex.Match(js, reSwap).Success)
                 {
-                    idCharSwap = functionIdentifier; //If def matched the regex for charSwap then the current function is defined as swap.
+                    if (String.IsNullOrEmpty(idCharSwap))
+                        idCharSwap = functionIdentifier; //If def matched the regex for charSwap then the current function is defined as swap.
                 }
             }
 
