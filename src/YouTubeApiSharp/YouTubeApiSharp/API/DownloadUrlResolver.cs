@@ -356,9 +356,9 @@ namespace YouTubeApiSharp
             }
         }
 
-        private static string GetVideoInfo(String videuUrl)
+        private static string GetVideoInfo(String videoUrl)
         {
-            String content = HttpHelper.DownloadString(videuUrl);
+            String content = HttpHelper.DownloadString(videoUrl);
             String streamingData = Helper.ExtractValue(content, "ytInitialPlayerResponse = ", ";</script>");
             return streamingData;
         }
