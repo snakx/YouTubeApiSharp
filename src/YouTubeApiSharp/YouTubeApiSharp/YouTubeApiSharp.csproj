@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Authors>Torsten Klinger</Authors>
     <Description>A complete Private YouTube API for .NET (C#, VB.NET).</Description>
     <RepositoryUrl>https://github.com/snakx/YouTubeApiSharp</RepositoryUrl>

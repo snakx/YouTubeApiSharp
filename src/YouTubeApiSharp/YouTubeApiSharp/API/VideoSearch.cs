@@ -67,7 +67,7 @@ namespace YouTubeApiSharp
                             Log.println(Helper.Folder, "Author: " + author);
 
                         // Description
-                        description = Helper.ExtractValue(result[ctr].Value, "descriptionSnippet\":{\"runs\":[{\"text\":\"", "\"}]},").Replace(@"\u0026", "&");
+                        description = Helper.ExtractValue(result[ctr].Value, "\"description\":{\"simpleText\":\"", "\"},").Replace(@"\u0026", " &");
 
                         if (Log.getMode())
                             Log.println(Helper.Folder, "Description: " + description);

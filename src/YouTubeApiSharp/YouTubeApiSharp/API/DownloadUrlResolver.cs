@@ -343,10 +343,19 @@ namespace YouTubeApiSharp
 
         private static Model LoadModel(string videoUrl)
         {
-            var videoId = videoUrl.Replace("https://youtube.com/watch?v=", "");
-            var url = $"https://www.youtube.com/get_video_info?html5=1&video_id={videoId}&eurl=https://youtube.googleapis.com/v/{videoId}";
+            //var videoId = videoUrl.Replace("https://youtube.com/watch?v=", "");
+            //var url = $"https://www.youtube.com/get_video_info?html5=1&video_id={videoId}&eurl=https://youtube.googleapis.com/v/{videoId}";
 
-            return Model.FromJson(HttpHelper.UrlDecode(HttpHelper.ParseQueryString(HttpHelper.DownloadString(url))["player_response"]));
+            //return Model.FromJson(HttpHelper.UrlDecode(HttpHelper.ParseQueryString(HttpHelper.DownloadString(url))["player_response"]));
+
+            return Model.FromJson(GetVideoInfo(videoUrl));
+        }
+
+        private static string GetVideoInfo(String videuUrl)
+        {
+            String content = HttpHelper.DownloadString(videuUrl);
+            String streamingData = Helper.ExtractValue(content, "ytInitialPlayerResponse = ", ";</script>");
+            return streamingData;
         }
 
         private static void ThrowYoutubeParseException(Exception innerException, string videoUrl)
