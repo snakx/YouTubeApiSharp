@@ -15,10 +15,10 @@ namespace ExampleApplication
             /* ********** */
 
             /* Search video */
-            //Search();
+            Search();
 
             /* Download audio, video */
-            Download();
+            //Download();
 
             /* Search playlist */
             //Search_Playlist();
@@ -44,7 +44,7 @@ namespace ExampleApplication
             string querystring = "Kurdo";
 
             // Number of result pages
-            int querypages = 5;
+            int querypages = 1;
 
             ////////////////////////////////
             // Start searching
@@ -53,8 +53,11 @@ namespace ExampleApplication
             VideoSearch videos = new VideoSearch();
             var items = await videos.GetVideos(querystring, querypages);
 
+            int i = 1;
+
             foreach (var item in items)
             {
+                Console.WriteLine("# " + i);
                 Console.WriteLine("Title: " + item.getTitle());
                 Console.WriteLine("Author: " + item.getAuthor());
                 Console.WriteLine("Description: " + item.getDescription());
@@ -63,6 +66,7 @@ namespace ExampleApplication
                 Console.WriteLine("Thumbnail: " + item.getThumbnail());
                 Console.WriteLine("ViewCount: " + item.getViewCount());
                 Console.WriteLine("");
+                i++;
             }
         }
 

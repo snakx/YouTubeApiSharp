@@ -46,7 +46,7 @@ namespace YouTubeApiSharp
                     content = Helper.ExtractValue(content, "ytInitialData", "ytInitialPlayerResponse");
 
                     // Search string
-                    string pattern = "videoRenderer.*?serviceEndpoint";
+                    string pattern = "videoRenderer.*?maxOneLine";
                     MatchCollection result = Regex.Matches(content, pattern, RegexOptions.Singleline);
 
                     for (int ctr = 0; ctr <= result.Count - 1; ctr++)
@@ -67,7 +67,7 @@ namespace YouTubeApiSharp
                             Log.println(Helper.Folder, "Author: " + author);
 
                         // Description
-                        description = Helper.ExtractValue(result[ctr].Value, "\"description\":{\"simpleText\":\"", "\"},").Replace(@"\u0026", " &");
+                        description = Helper.ExtractValue(result[ctr].Value, "\"snippetText\":{\"runs\":[", "]},").Replace(@"\u0026", " &");
 
                         if (Log.getMode())
                             Log.println(Helper.Folder, "Description: " + description);
@@ -136,7 +136,7 @@ namespace YouTubeApiSharp
                         Log.println(Helper.Folder, "continuationCommand: " + continuationCommand);
 
                     // Search string
-                    string pattern = "videoRenderer.*?serviceEndpoint";
+                    string pattern = "videoRenderer.*?maxOneLine";
                     MatchCollection result = Regex.Matches(content, pattern, RegexOptions.Singleline);
 
                     for (int ctr = 0; ctr <= result.Count - 1; ctr++)
@@ -159,7 +159,7 @@ namespace YouTubeApiSharp
                             Log.println(Helper.Folder, "Author: " + author);
 
                         // Description
-                        description = Helper.ExtractValue(r, "\"descriptionSnippet\": { \"runs\": [ { \"text\": \"", "\" } ] },").Replace(@"\u0026", "&");
+                        description = Helper.ExtractValue(result[ctr].Value, "\"snippetText\":{\"runs\":[", "]},").Replace(@"\u0026", " &");
 
                         if (Log.getMode())
                             Log.println(Helper.Folder, "Description: " + description);
